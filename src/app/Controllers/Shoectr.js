@@ -20,9 +20,13 @@ class Shoectr{
     save(req,res,next){
         const data=req.body;
         const shoe=new Shoe(data);
-        shoe.save();
+        shoe.save()
+        .then(
+            
+        )
+        .catch(next);
 
-        res.json(req.body);
+       // res.json(req.body);
     }
 
 

@@ -1,6 +1,6 @@
 const Players=require("./Players")
 const Shoes=require('./Shoes')
-
+const Login=require('./Login')
 // config the route
 function route(app){
    //path to home
@@ -12,7 +12,8 @@ function route(app){
     
     //path to Players view    
     app.get('/Players',Players);
-    
+    app.get('/Addplayer',Players);
+    app.post('/Saveplayer',Players);
 
     //path to Shoes page
     app.get('/Shoes',Shoes);
@@ -29,7 +30,8 @@ function route(app){
     //path to Login page
     app.get('/login',(req,res)=>{
         res.render('login')
-    })
+    });
+    app.post('/CheckLogin',Login);
 
    
   

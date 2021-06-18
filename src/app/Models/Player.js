@@ -7,7 +7,7 @@ const schema=mongoose.Schema;
 const Player=new schema({
     name:{type:String },
     description:{type:String},
-    image:{type:String},
+    image:{type:String}
 });
 
 module.exports=mongoose.model('Player',Player);

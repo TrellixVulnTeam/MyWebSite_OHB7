@@ -1,4 +1,4 @@
-// to create model to entites
+// to create model of entites
 // create schema to show one entity
 
 const mongoose=require('mongoose')

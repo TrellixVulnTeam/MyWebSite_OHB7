@@ -1,56 +1,15 @@
-<head>
-  
-  <!--set độ rộng cho mọi loại màn hình-->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verify</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-
-<body>
-  <div class="container">
-  <div class="container right-panel">
-   
-    <!--signup-->
-    <div class="container form_signup">
-      <form action="" class="form" id="formsignup">
-        <h2 class="form_title">Sign up</h2>
-        <input type="text" placeholder="User" class="input">
-        <input type="email" placeholder="Email" class="input">
-        <input type="password" placeholder="Password" class="input"> 
-        <button class="btn">Sign up</button>
-      </form>
-    </div>
-
-    <!--sign in-->
-    <div class="container from_signin">
-      <h2 class="form title">Sign in</h2>
-       <input type="text" placeholder="User" class="input">
-       <input type="password" placeholder="Password" class="input"> 
-        <button class="btn">Sign in</button>
-    </div>
-
-    <!--Overlay-->
-    <div class="container_overlay">
-      <div class="overlay">
-        <div class="overlay_panel overlay-left">
-          <h1>Welcome back</h1>
-          <p>Login with personal infomation.</p>
-          <button class="btn" id="signIn">Sign In</button>
-        </div>
-        <div class="overlay_panel overlay-right">
-          <h1>Welcome to Website</h1>
-          <p>If you are the new one please sign up to contact with us</p>
-          <button class="btn" id="signUp">Sign Up</button>
-        </div> 
-      </div>
-
-    </div>
-
+<div class="container">
+    <form action="/CheckLogin" method="POST">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" name="password">
   </div>
-</body>
-<script src="C:\\Users\\MyWebSite\\src\\public\\js\\script.js"></script>
-
-
+ 
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
