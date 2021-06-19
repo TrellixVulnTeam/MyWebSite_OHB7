@@ -14,6 +14,7 @@ function route(app){
     app.get('/Players',Players);
     app.get('/Addplayer',Players);
     app.post('/Saveplayer',Players);
+    app.get('/Playerdetail/:slug',Players);
 
     //path to Shoes page
     app.get('/Shoes',Shoes);

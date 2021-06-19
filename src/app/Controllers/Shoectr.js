@@ -21,11 +21,19 @@ class Shoectr{
         const data=req.body;
         const shoe=new Shoe(data);
         shoe.save()
-        .then(
-            
-        )
-        .catch(next);
+       .then(
+            Shoe.find({})
+            .then(shoes=>{
+    
+                res.render('C:/Users/MyWebSite/src/resources/views/Shoes/Shoes.hbs',{shoes:mutipleMongoosesToOject(shoes)})
+            }).catch(next)
 
+            
+           
+         
+
+       )
+       .catch(next);
        // res.json(req.body);
     }
 
